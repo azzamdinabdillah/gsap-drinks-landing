@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/style.css" rel="stylesheet" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div
+        class="relative before:w-full before:h-full before:absolute before:inset-0 before:bg-[url(/images/noise.png)] before:bg-no-repeat before:bg-center before:bg-cover before:z-10 before:opacity-[0.3]"
+      >
+        <nav class="flex flex-col gap-6 px-4.5 py-6 items-center relative z-20">
+          <div class="flex gap-1 items-center">
+            <img src="/icons/logo.svg" alt="" />
+            <p class="font-modern-negra text-3xl text-white">Velvet Pour</p>
+          </div>
+          <div
+            class="flex w-full justify-around items-center text-sm text-white-100"
+          >
+            <a href="">Cocktails</a>
+            <a href="">About Us</a>
+            <a href="">The Art</a>
+            <a href="">Contact</a>
+          </div>
+        </nav>
+        <section class="px-4.5 pt-5 bg-section min-h-dvh">
+          <img
+            src="/images/leaf-right.png"
+            alt=""
+            class="absolute right-0 top-[50%] w-[173px]"
+          />
+          <img
+            src="/images/leaf-left.png"
+            alt=""
+            class="absolute left-0 top-[80%] w-[177px]"
+          />
+          <div class="flex flex-col items-center">
+            <h1
+              style="font-size: clamp(32px, 28vw, 132px)"
+              class="text-9xl main-text font-modern-negra text-gradient"
+            >
+              MIZONE
+            </h1>
+            <div class="flex gap-3 flex-col items-center relative z-20">
+              <p
+                class="text-center text-base font-medium leading-[150%] font-sans text-white"
+              >
+                Every drinks on our menu is a blend of premium ingredients,
+                creative flair, and timeless recipes — designed to delight your
+                senses.
+              </p>
+              <a href="" class="text-base font-semibold font-sans text-white/80"
+                >View drinks</a
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
