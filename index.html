@@ -10,25 +10,27 @@
   <body>
     <div
       id="app"
-      class="relative before:w-full before:h-full before:absolute before:inset-0 before:bg-[url(/images/noise.png)] before:bg-no-repeat before:bg-center before:bg-cover before:z-20 before:opacity-[0.3]"
+      class="relative pb-12 before:w-full before:h-full before:absolute before:inset-0 before:bg-[url(/images/noise.png)] before:bg-no-repeat before:bg-center before:bg-cover before:z-20 before:opacity-[0.3]"
     >
-      <div class="relative min-h-dvh bg-section">
+      <div class="relative min-h-dvh bg-section overflow-hidden">
         <div class="absolute inset-0">
           <video
             muted
             playsinline
             preload="auto"
             src="/videos/output.mp4"
-            class="w-full h-[40%] absolute bottom-0 left-0 right-0 object-cover"
+            class="w-full h-[45%] md:h-[60%] absolute bottom-0 left-0 right-0 object-cover"
           ></video>
         </div>
-        <nav class="flex flex-col gap-6 px-4.5 py-6 items-center relative z-20">
-          <div class="flex gap-1 items-center">
+        <nav
+          class="flex flex-col gap-6 px-4.5 py-6 items-center relative z-20 lg:flex-row max-w-[1260px] mx-auto lg:py-7 lg:px-20"
+        >
+          <div class="flex gap-1 items-center lg:w-full">
             <img src="/icons/logo.svg" alt="" />
             <p class="font-modern-negra text-3xl text-white">Velvet Pour</p>
           </div>
           <div
-            class="flex w-full justify-around items-center text-sm text-white-100"
+            class="flex w-full justify-around items-center text-sm text-white-100 lg:gap-12 lg:justify-end"
           >
             <a href="">Cocktails</a>
             <a href="">About Us</a>
@@ -36,25 +38,54 @@
             <a href="">Contact</a>
           </div>
         </nav>
-        <section class="px-4.5 pt-5">
+        <div
+          class="w-full lg:flex justify-between items-end hidden absolute bottom-[7%] left-0 right-0 max-w-[1280px] px-20 mx-auto"
+        >
+          <div class="flex flex-col gap-3 w-[248px]">
+            <p class="text-base text-white font-medium font-sans">
+              Cool. Crisp. Classic.
+            </p>
+            <h2 class="text-5xl text-[#E7D393] font-modern-negra">
+              Sip the Spirit of Summer
+            </h2>
+          </div>
+
+          <div class="flex gap-3 flex-col items-start relative z-20 w-[292px]">
+            <p
+              class="text-[18px] font-medium leading-[150%] font-sans text-white sub-text"
+            >
+              Every drinks on our menu is a blend of premium ingredients,
+              creative flair, and timeless recipes — designed to delight your
+              senses.
+            </p>
+            <a href="" class="text-base font-semibold font-sans text-white/80"
+              >View drinks</a
+            >
+          </div>
+        </div>
+        <section
+          class="px-4.5 pt-5 lg:pt-20 max-w-[460px] lg:max-w-full mx-auto"
+        >
           <img
             src="/images/leaf-right.png"
             alt=""
-            class="leaf-right absolute right-0 top-[50%] w-[143px] z-20"
+            class="leaf-right absolute right-0 top-[50%] w-[143px] z-20 md:w-[200px] lg:w-[250px] xl:w-[350px] lg:top-[0%] lg:translate-x-10"
           />
-          <img  
+          <img
             src="/images/leaf-left.png"
             alt=""
-            class="leaf-left absolute left-0 top-[70%] w-[147px] z-20"
+            class="leaf-left absolute left-0 top-[70%] w-[147px] z-20 md:w-[190px] lg:w-[270px] xl:w-[330px] lg:top-[30%] lg:-translate-x-10"
           />
           <div class="flex flex-col items-center">
             <h1
               style="font-size: clamp(32px, 28vw, 132px)"
-              class="text-9xl main-text font-modern-negra text-gradient"
+              class="text-9xl main-text font-modern-negra text-gradient lg:!text-[230px] xl:!text-[330px]"
             >
               MIZONE
             </h1>
-            <div class="flex gap-3 flex-col items-center relative z-20">
+            <div
+              class="flex gap-3 flex-col items-center relative z-20 lg:hidden"
+            >
               <p
                 class="text-center text-base font-medium leading-[150%] font-sans text-white sub-text"
               >
@@ -69,97 +100,131 @@
           </div>
         </section>
       </div>
-      <div class="text-white relative z-20">
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          odit id, laborum cupiditate sapiente obcaecati, in tempora labore
-          ipsum delectus, eius eligendi eveniet a quae reprehenderit?
-          Accusantium, velit quod? Aliquam.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          odit id, laborum cupiditate sapiente obcaecati, in tempora labore
-          ipsum delectus, eius eligendi eveniet a quae reprehenderit?
-          Accusantium, velit quod? Aliquam.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          odit id, laborum cupiditate sapiente obcaecati, in tempora labore
-          ipsum delectus, eius eligendi eveniet a quae reprehenderit?
-          Accusantium, velit quod? Aliquam.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          odit id, laborum cupiditate sapiente obcaecati, in tempora labore
-          ipsum delectus, eius eligendi eveniet a quae reprehenderit?
-          Accusantium, velit quod? Aliquam.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          odit id, laborum cupiditate sapiente obcaecati, in tempora labore
-          ipsum delectus, eius eligendi eveniet a quae reprehenderit?
-          Accusantium, velit quod? Aliquam.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          odit id, laborum cupiditate sapiente obcaecati, in tempora labore
-          ipsum delectus, eius eligendi eveniet a quae reprehenderit?
-          Accusantium, velit quod? Aliquam.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          odit id, laborum cupiditate sapiente obcaecati, in tempora labore
-          ipsum delectus, eius eligendi eveniet a quae reprehenderit?
-          Accusantium, velit quod? Aliquam.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          odit id, laborum cupiditate sapiente obcaecati, in tempora labore
-          ipsum delectus, eius eligendi eveniet a quae reprehenderit?
-          Accusantium, velit quod? Aliquam.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          odit id, laborum cupiditate sapiente obcaecati, in tempora labore
-          ipsum delectus, eius eligendi eveniet a quae reprehenderit?
-          Accusantium, velit quod? Aliquam.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          odit id, laborum cupiditate sapiente obcaecati, in tempora labore
-          ipsum delectus, eius eligendi eveniet a quae reprehenderit?
-          Accusantium, velit quod? Aliquam.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          odit id, laborum cupiditate sapiente obcaecati, in tempora labore
-          ipsum delectus, eius eligendi eveniet a quae reprehenderit?
-          Accusantium, velit quod? Aliquam.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          odit id, laborum cupiditate sapiente obcaecati, in tempora labore
-          ipsum delectus, eius eligendi eveniet a quae reprehenderit?
-          Accusantium, velit quod? Aliquam.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          odit id, laborum cupiditate sapiente obcaecati, in tempora labore
-          ipsum delectus, eius eligendi eveniet a quae reprehenderit?
-          Accusantium, velit quod? Aliquam.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          odit id, laborum cupiditate sapiente obcaecati, in tempora labore
-          ipsum delectus, eius eligendi eveniet a quae reprehenderit?
-          Accusantium, velit quod? Aliquam.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          odit id, laborum cupiditate sapiente obcaecati, in tempora labore
-          ipsum delectus, eius eligendi eveniet a quae reprehenderit?
-          Accusantium, velit quod? Aliquam.
-        </h1>
+
+      <div
+        class="max-w-[1280px] mx-auto px-4.5 relative z-20 md:px-10 lg:px-20"
+      >
+        <div class="flex justify-between flex-col gap-16 md:flex-row md:gap-10">
+          <div class="flex flex-col gap-7">
+            <h2 class="text-xl font-medium font-sans text-white">
+              Most popular coffee
+            </h2>
+            <div class="flex gap-9 flex-col">
+              <div class="flex justify-between items-start gap-4">
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[#E7D393] font-modern-negra text-3xl">
+                    Capuccino Gula Aren
+                  </h3>
+                  <p class="text-base text-white font-medium font-sans">
+                    AU | Battle
+                  </p>
+                </div>
+
+                <p class="text-white text-[22px] font-sans font-medium">
+                  — $10
+                </p>
+              </div>
+              <div class="flex justify-between items-start gap-4">
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[#E7D393] font-modern-negra text-3xl">
+                    Latte No Sugar
+                  </h3>
+                  <p class="text-base text-white font-medium font-sans">
+                    AU | Battle
+                  </p>
+                </div>
+
+                <p class="text-white text-[22px] font-sans font-medium">— $7</p>
+              </div>
+              <div class="flex justify-between items-start gap-4">
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[#E7D393] font-modern-negra text-3xl">
+                    Caramel Machiato
+                  </h3>
+                  <p class="text-base text-white font-medium font-sans">
+                    AU | Battle
+                  </p>
+                </div>
+
+                <p class="text-white text-[22px] font-sans font-medium">
+                  — $12
+                </p>
+              </div>
+              <div class="flex justify-between items-start gap-4">
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[#E7D393] font-modern-negra text-3xl">
+                    Expresso
+                  </h3>
+                  <p class="text-base text-white font-medium font-sans">
+                    AU | Battle
+                  </p>
+                </div>
+
+                <p class="text-white text-[22px] font-sans font-medium">— $5</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-7">
+            <h2 class="text-xl font-medium font-sans text-white">
+              Most popular coffee
+            </h2>
+            <div class="flex gap-9 flex-col">
+              <div class="flex justify-between items-start gap-4">
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[#E7D393] font-modern-negra text-3xl">
+                    Capuccino Gula Aren
+                  </h3>
+                  <p class="text-base text-white font-medium font-sans">
+                    AU | Battle
+                  </p>
+                </div>
+
+                <p class="text-white text-[22px] font-sans font-medium">
+                  — $10
+                </p>
+              </div>
+              <div class="flex justify-between items-start gap-4">
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[#E7D393] font-modern-negra text-3xl">
+                    Latte No Sugar
+                  </h3>
+                  <p class="text-base text-white font-medium font-sans">
+                    AU | Battle
+                  </p>
+                </div>
+
+                <p class="text-white text-[22px] font-sans font-medium">— $7</p>
+              </div>
+              <div class="flex justify-between items-start gap-4">
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[#E7D393] font-modern-negra text-3xl">
+                    Caramel Machiato
+                  </h3>
+                  <p class="text-base text-white font-medium font-sans">
+                    AU | Battle
+                  </p>
+                </div>
+
+                <p class="text-white text-[22px] font-sans font-medium">
+                  — $12
+                </p>
+              </div>
+              <div class="flex justify-between items-start gap-4">
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[#E7D393] font-modern-negra text-3xl">
+                    Expresso
+                  </h3>
+                  <p class="text-base text-white font-medium font-sans">
+                    AU | Battle
+                  </p>
+                </div>
+
+                <p class="text-white text-[22px] font-sans font-medium">— $5</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script type="module" src="/src/main.js"></script>

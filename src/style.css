@@ -27,6 +27,10 @@ body {
   will-change: transform, opacity;
 }
 
+.line-sub-text {
+  margin: 5px 0;
+}
+
 /* .bg-section::after {
   content: "";
   background: radial-gradient(50% 50% at 50% 50%, #434343 0%, #000 100%);

@@ -3,6 +3,9 @@ import { ScrollTrigger, SplitText } from "gsap/all";
 
 window.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger, SplitText);
+  const mediaQueryTablet = window.matchMedia("(min-width: 768px)");
+  const mediaQueryDesktop = window.matchMedia("(min-width: 1200px)");
+
   const video = document.querySelector("video");
   const splitTextH1 = SplitText.create(".main-text", {
     type: "chars",
@@ -12,6 +15,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const splitTextSubText = SplitText.create(".sub-text", {
     type: "lines",
     mask: "lines",
+    linesClass: "line-sub-text",
   });
 
   gsap
@@ -41,12 +45,20 @@ window.addEventListener("DOMContentLoaded", () => {
       "-=.7"
     );
 
+  let startDrinkST = "-55% 30%";
+  let endDrinkST = "bottom top";
+
+  if (mediaQueryTablet.matches) {
+    startDrinkST = "20% center";
+    endDrinkST = "bottom 40%";
+  }
+
   video.addEventListener("loadedmetadata", () => {
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: video,
-        start: "top 60%",
-        end: "bottom top",
+        start: startDrinkST,
+        end: endDrinkST,
         scrub: true,
         markers: true,
         pin: true,
@@ -54,20 +66,20 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     tl.to(video, {
-      currentTime: video.duration,
+      currentTime: mediaQueryTablet.matches ? 5 : video.duration,
       ease: "none",
     })
       .to(
         ".leaf-right",
         {
-          y: -100,
+          y: mediaQueryDesktop.matches ? -50 : -100,
         },
         0
       )
       .to(
         ".leaf-left",
         {
-          y: -500,
+          y: mediaQueryDesktop.matches ? -300 : -500,
         },
         0
       );
